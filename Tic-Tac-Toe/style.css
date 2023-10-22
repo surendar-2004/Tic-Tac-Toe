@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color:#565daf;
+}
+.hero{
+    margin-top: 70px;
+}
+.game-heading{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.main-container{
+    width: 350px;
+    height: 350px;
+}
+table{
+    text-align: center;
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+    width:100%;
+    height: 100%;
+    cursor: pointer;
+}
+td{
+    width: 60px;
+    height: 90px;
+}
+.btns-container{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    margin-top: 40px;
+}
+.btn{
+    padding: 5px 20px;
+    margin: 0px 25px;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 2px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    transition: .3s ease;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: white;
+    color: rgb(31, 52, 68);
+}
+
+
+/* -----------------Media Queries-------------- */
+@media screen and (max-width:360px)
+{
+    .hero{
+        margin-top: 30px;
+    }
+    .game-heading{
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+    .main-container{
+        width: 320px;
+        height: 320px;
+    }
+    table{
+        font-size: 45px;
+    }
+    td{
+        width: 40px;
+        height: 70px;
+    }
+    .btns-container{
+        padding-top: 10px;
+        margin-top: 15px;
+    }
+    .btn{
+        font-size: 18px;
+    }
+}
